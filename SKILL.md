@@ -11,7 +11,7 @@ description: 当用户要在发布短视频文案/口播稿前做最后检查，
 ```
 [1]热点选题(iskill-hot-topic-scout) → [2]爆款拆解(iskill-viral-teardown)
 → [3]文案生成(iskill-viral-copywriter) → [4]去AI味+真人点评(iskill-copy-deslop)
-→ [5]发布预检(本skill) → ✅ 发布
+→ [5]发布预检(本skill) → [6]成片/剪映草稿(iskill-video-clipper) → ✅ 发布
 ```
 
 ## 执行流程

@@ -80,13 +80,14 @@ window.PROMO = {
       steps: {
         eyebrow: "上手",
         title: "三步跑起来",
-        sub: "",
+        sub: "命令由 agent 跑，你只说要什么、看结果。",
         items: [
           { title: "交给 AI 装", desc: "把这句话粘进对话框，agent 会自己拉代码、读文档，再告诉你用法。", codeKey: "install" },
-          { title: "把稿子发过去预检", desc: "说清发布平台，要求给替代表述、四维打分与结论。", codeName: "prompt", code: "帮我预检这篇口播稿，发布平台是视频号；违禁词给替代表述，四维打分并给结论。" },
-          { title: "拿报告", desc: "报告按原稿名落盘，含结论 + 违禁词命中表 + 四维评分条 + 最关键 3 条建议。", codeName: "path", code: "viral-video-team-output/文案/<原稿名>-预检.md" }
+          { title: "把稿子发过去预检", desc: "平台说清楚评分口径才准；稿子可以直接贴在对话里。", codeName: "prompt", code: "帮我预检这篇口播稿，发布平台是视频号；违禁词给替代表述，四维打分并给结论。" },
+          { title: "只看结论那一行", desc: "报告落在这个路径，你只要看放行结论：放行 / 修改后放行 / 不建议发；命中清单和评分是给 agent 改稿用的。", codeName: "path", code: "viral-video-team-output/文案/<原稿名>-预检.md" }
         ]
       },
+
 
       faq: {
         eyebrow: "问答",
@@ -176,13 +177,14 @@ window.PROMO = {
       steps: {
         eyebrow: "Get started",
         title: "Up and running in three steps",
-        sub: "",
+        sub: "The agent runs the commands. You say what you want and check the result.",
         items: [
           { title: "Let your agent install it", desc: "Paste the line into the chat — it clones the repo, reads the docs, and tells you how to use it.", codeKey: "install" },
-          { title: "Send it the script", desc: "Name the platform and ask for replacements, a four-axis score and a verdict.", codeName: "prompt", code: "Precheck this script for Video Account; give replacements for banned words, score four axes and return a verdict." },
-          { title: "Collect the report", desc: "The report lands under the original filename: verdict + banned-word table + score bars + top 3 edits.", codeName: "path", code: "viral-video-team-output/文案/<script>-预检.md" }
+          { title: "Send the script for pre-check", desc: "Name the platform or the scoring is off. You can paste the script straight into the chat.", codeName: "prompt", code: "Pre-check this script — it's going out on WeChat Channels. Flag banned words with alternatives, score the four dimensions, and give me a verdict." },
+          { title: "Read the verdict line", desc: "The report lands at this path; all you need is ship / ship after edits / don't ship. The lists are for the agent to fix.", codeName: "path", code: "viral-video-team-output/文案/<script-name>-precheck.md" }
         ]
       },
+
 
       faq: {
         eyebrow: "FAQ",

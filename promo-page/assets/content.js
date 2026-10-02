@@ -31,15 +31,19 @@ window.PROMO = {
         meta2: "无需脚本",
         meta3: "四维评分"
       },
-      terminal: {
-        title: "precheck — 预检报告",
-        lines: [
-          [{ t: "$ ", c: "p" }, { t: "帮我预检这篇口播稿，发布平台是视频号；违禁词给替代表述，四维打分并给结论", c: "k" }],
-          [{ t: "→ ", c: "p" }, { t: "Step 1 违禁词（五类逐条扫）→ Step 2 四维评分 → Step 3 结论", c: "" }],
-          [{ t: "✓ ", c: "p" }, { t: "结论：改后放行（17/20）· 命中 2 处极限词，已给替代表述", c: "s" }],
-          [{ t: "→ ", c: "p" }, { t: "报告已写入 viral-video-team-output/文案/<原稿名>-预检.md", c: "" }]
+      chat: {
+        title: "AI Agent · 对话现场",
+        status: "在线",
+        userLabel: "你",
+        agentLabel: "AI",
+        messages: [
+          { role: "user", text: "帮我预检这篇口播稿，发布平台是视频号" },
+          { role: "agent", text: "出违禁词清单（每处都给替代表述）+ 四维评分 + 放行结论，报告按原稿名落盘。", tag: "已读 平台规则" },
+          { role: "user", text: "结论是什么？" },
+          { role: "agent", text: "修改后放行——3 处高风险，最关键的是第二段那句绝对化表述，改成「多数人反馈」就能发。" }
         ]
       },
+
 
       stats: [
         { value: "5", label: "违禁词类别", note: "极限词 / 绝对化承诺 / 医疗功效 / 收益金融 / 引流敏感" },
@@ -128,15 +132,19 @@ window.PROMO = {
         meta2: "No scripts",
         meta3: "Four-axis score"
       },
-      terminal: {
-        title: "precheck — report",
-        lines: [
-          [{ t: "$ ", c: "p" }, { t: "Precheck this script for Video Account; give replacements for banned words, score four axes and return a verdict.", c: "k" }],
-          [{ t: "→ ", c: "p" }, { t: "Step 1 banned words (5 categories) → Step 2 four-axis score → Step 3 verdict", c: "" }],
-          [{ t: "✓ ", c: "p" }, { t: "Verdict: fix-then-pass (17/20) · 2 superlatives hit, replacements given", c: "s" }],
-          [{ t: "→ ", c: "p" }, { t: "Report written to viral-video-team-output/文案/<script>-预检.md", c: "" }]
+      chat: {
+        title: "AI Agent · live session",
+        status: "online",
+        userLabel: "You",
+        agentLabel: "AI",
+        messages: [
+          { role: "user", text: "Pre-check this script for me — it's going out on WeChat Channels" },
+          { role: "agent", text: "You get a banned-word list (each with a replacement), four-dimension scores and a verdict. The report is written to disk under the original filename.", tag: "read platform rules" },
+          { role: "user", text: "So what's the verdict?" },
+          { role: "agent", text: "Ship after edits — 3 high-risk hits. The big one is the absolute claim in paragraph two; soften it to \"most people report\" and it's fine." }
         ]
       },
+
 
       stats: [
         { value: "5", label: "banned-word categories", note: "superlatives / absolute promises / medical claims / earnings / off-platform funnels" },

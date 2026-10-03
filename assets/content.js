@@ -13,7 +13,7 @@ window.PROMO = {
     zh: {
       meta: {
         title: "ISKILL-CONTENT-PRECHECK · 发布前最后一道闸",
-        description: "对照五类违禁词清单逐条扫描，再从钩子/共鸣/表达/合规四维打分，给出「放行 / 改后放行 / 打回」的明确结论。"
+        description: "对照五类违禁词清单逐条扫描，再从钩子/共鸣/表达/合规四维打分，给出「放行 / 改后放行 / 打回」的明确结论；多平台四套时逐套出报告、独立评级，绝不合并。"
       },
       a11y: { skip: "跳到主要内容" },
       ui: { copy: "复制", copied: "已复制", failed: "复制失败" },
@@ -68,7 +68,7 @@ window.PROMO = {
           { icon: "check", title: "违禁词扫描", desc: "五类清单逐条扫，命中即报并给替代表述（如「全网最低价」→「这个价格我确实没见过更低的」）。" },
           { icon: "gauge", title: "四维评分", desc: "钩子 / 共鸣 / 表达 / 合规各 1–5 分，每维附一句理由。" },
           { icon: "cross", title: "三档结论", desc: "≥16/20 放行、12–15 改后放行、<12 打回，不许含糊。" },
-          { icon: "copy", title: "发布文案同级受检", desc: "标题 / 描述 / 标签与口播稿分别出报告，额外关注标题党尺度与标签敏感组合。" },
+          { icon: "copy", title: "多套逐篇受检", desc: "四套口播稿、四套发布文案一套一报告、独立评级，绝不合并打分——各平台机审尺度不同，合并会漏检或误伤；某套不过只回炉那一套。" },
           { icon: "shield", title: "按平台从严", desc: "用户说明了发布平台（视频号 / 抖音 / 小红书）就按该平台的加码规则收紧。" },
           { icon: "arrow", title: "打回上游", desc: "医疗 / 收益类硬违禁且无合规替代时，退回 iskill-viral-copywriter 重写并写明原因。" }
         ]
@@ -114,7 +114,7 @@ window.PROMO = {
     en: {
       meta: {
         title: "ISKILL-CONTENT-PRECHECK · The last gate before you publish",
-        description: "Scan against five banned-word categories, then score hook / resonance / delivery / compliance on a four-axis scale and return a clear pass / fix-then-pass / reject verdict."
+        description: "Scan against five banned-word categories, then score hook / resonance / delivery / compliance on a four-axis scale and return a clear pass / fix-then-pass / reject verdict; with the four-platform sets each one gets its own report and independent rating, never merged."
       },
       a11y: { skip: "Skip to content" },
       ui: { copy: "Copy", copied: "Copied", failed: "Copy failed" },
@@ -169,7 +169,7 @@ window.PROMO = {
           { icon: "check", title: "Banned-word scan", desc: "Five categories scanned line by line; each hit gets a replacement (e.g. “lowest price anywhere” → “I really haven't seen lower”)." },
           { icon: "gauge", title: "Four-axis score", desc: "Hook / resonance / delivery / compliance, 1–5 each, with one reason per axis." },
           { icon: "cross", title: "Three verdict tiers", desc: "≥16/20 pass, 12–15 fix-then-pass, <12 reject — no hedging." },
-          { icon: "copy", title: "Publish text checked too", desc: "Title / description / tags get their own report, watching clickbait limits and risky tag combos." },
+          { icon: "copy", title: "Every set checked separately", desc: "Four scripts and four publish-copy sets each get their own report and independent rating — never merged, since platform review bars differ; a failing set goes back on its own." },
           { icon: "shield", title: "Platform-strict", desc: "Name the platform (Video Account / Douyin / Xiaohongshu) and it tightens to that platform's extra rules." },
           { icon: "arrow", title: "Sent back upstream", desc: "Hard medical or earnings violations with no compliant rewrite are returned to iskill-viral-copywriter with reasons." }
         ]
